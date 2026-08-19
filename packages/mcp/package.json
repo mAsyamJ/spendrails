@@ -1,0 +1,40 @@
+{
+  "name": "@spendrail/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for SpendRail — AI agents consume payment controls via MCP tools",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "spendrail-mcp": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@spendrail/core": "^1.0.2",
+    "@spendrail/control": "^1.0.2",
+    "@spendrail/observe": "^1.0.2",
+    "@spendrail/protect": "^1.0.2",
+    "@spendrail/sandbox": "^1.0.2"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mAsyamJ/spendrail",
+    "directory": "packages/mcp"
+  }
+}

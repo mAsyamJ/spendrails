@@ -1,0 +1,32 @@
+{
+  "name": "@spendrail/wallet",
+  "version": "1.0.0",
+  "description": "Wallet-agnostic adapter layer for SpendRail — plug any wallet backend (Coinbase, local signer, Openfort, Safe) behind SpendRail policy controls",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@spendrail/core": ">=1.0.0",
+    "@spendrail/control": ">=1.0.0",
+    "@spendrail/observe": ">=1.0.0"
+  },
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mAsyamJ/spendrail",
+    "directory": "packages/wallet"
+  },
+  "keywords": ["wallet", "ai-agent", "payment", "policy", "spendrail", "coinbase", "x402"]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@spendrail/mcp-payment-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server demonstrating SpendRail payment controls for AI agents",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@spendrail/core": ">=1.0.0",
+    "@spendrail/control": ">=1.0.0",
+    "@spendrail/observe": ">=1.0.0",
+    "@spendrail/sandbox": ">=1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

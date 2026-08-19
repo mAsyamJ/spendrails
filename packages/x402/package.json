@@ -1,0 +1,36 @@
+{
+  "name": "@spendrail/x402",
+  "version": "1.0.2",
+  "description": "x402 protocol adapter for SpendRail — spending limits, circuit breakers, and observability for HTTP 402 payments",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "peerDependencies": {
+    "@x402/core": ">=0.7.0"
+  },
+  "dependencies": {
+    "@spendrail/core": ">=1.0.0",
+    "@spendrail/control": ">=1.0.0",
+    "@spendrail/observe": ">=1.0.0",
+    "@spendrail/protect": ">=1.0.0"
+  },
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mAsyamJ/spendrail",
+    "directory": "packages/x402"
+  },
+  "keywords": ["x402", "payment", "ai-agent", "spending-limits", "middleware", "spendrail"]
+}

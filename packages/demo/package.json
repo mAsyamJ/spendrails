@@ -1,0 +1,23 @@
+{
+  "name": "spendrail-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive CLI demo — see SpendRail block, approve, and audit AI agent payments in real-time",
+  "bin": {
+    "spendrail-demo": "./dist/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@spendrail/core": "*",
+    "@spendrail/control": "*",
+    "@spendrail/observe": "*",
+    "@spendrail/sandbox": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
