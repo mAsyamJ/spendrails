@@ -156,28 +156,6 @@ MCP for judges:
 
 ---
 
-## 2–4 minute pitch
-
-| Time | Say | Show |
-| --- | --- | --- |
-| 0:20 | Agents got wallets. They did not get budgets. | Tagline |
-| 0:40 | Live `npx spendrail-demo`: ALLOW, ASK, BLOCK, breaker, injection. | Terminal |
-| 0:30 | Deterministic policy. Fail-closed. LLM never signs. | Architecture diagram |
-| 0:30 | Web3: x402 adapter + MCP so Hermes/Cursor can request, not spend. | MCP snippet |
-| 0:20 | Next: testnet adapters and approval channels. The primitive is spending authority. | Repo |
-
----
-
-## For judges
-
-- **Repo:** https://github.com/RetroPick/retropick-creator-signal
-- **Node:** 18+
-- **Working demo:** `npx spendrail-demo`
-- **Core loop:** payment intent → policy → ALLOW / ASK / BLOCK → wallet adapter
-- **Web3:** x402 lifecycle hooks, wallet adapters, sandbox/testnet execution
-- **Quality:** `npm run build`, `npm run typecheck`, `npm test` (169), `npm run lint`
-- **Pitch length:** 2–4 minutes + Q&A
-
 Docs: [Hermes demo](docs/HERMES_DEMO.md) · [MCP](docs/MCP_INTEGRATION.md) · [Policy engine](docs/POLICY_ENGINE.md) · [Payment flow](docs/PAYMENT_FLOW.md) · [Roadmap](docs/ROADMAP.md)
 
 SpendRail is a working TypeScript workspace, not a hosted payments product and not mainnet-certified. Use sandbox or testnet until you have reviewed custody and policy for your environment.
